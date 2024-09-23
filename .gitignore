@@ -1,0 +1,18 @@
+# Wyklucz katalog node_modules, jeśli używasz Node.js
+node_modules/
+
+# Wyklucz folder build, jeśli używasz narzędzi do budowania (np. Webpack, Parcel)
+dist/
+build/
+
+# Wyklucz pliki tymczasowe systemu operacyjnego
+.DS_Store
+Thumbs.db
+
+# Wyklucz pliki tymczasowe edytora
+*.log
+*.tmp
+
+# Wyklucz ukryte pliki i katalogi np. edytora (VSCode, JetBrains)
+.vscode/
+.idea/
