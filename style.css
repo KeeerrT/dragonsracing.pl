@@ -4,19 +4,27 @@ html{
 .navigation ul{
     text-align: right;
     list-style: none;
-    margin: 0px;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .navigation li{
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 1.5vh;
     display: inline-block;
     list-style: none;
     position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .navigation li::after{
     content: '';
     width: 0%;
-    height: 2.4px;
+    height: 0.258vh;
     background: rgb(177, 0, 0);
     display: block;
     margin: 1px auto;
@@ -29,6 +37,10 @@ html{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bolder;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .navigation a.active{
     color: rgb(179, 0, 0);
@@ -37,40 +49,49 @@ html{
     align-content: center;
     font-style: italic;
     font-weight: bolder;
-    margin: 0px;
+    margin: 0;
 }
 .naglowek {
     height: auto;
-    padding: 10px 30px 10px 40px;
+    padding: 1vh 3vh 1vh 4vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .naglowek p{
-    margin: 0 0 0 30px;
-    font-size: 14px;
+    margin: 0 0 0 3vh;
+    font-size: 1.8vh;
     color: rgb(177, 0, 0);
     font-weight: bold;
     font-style: italic;
 }
 .naglowek-left {
     display: flex;
-    flex-direction: column; /* Ustawienie elementów w kolumnie */
+    flex-direction: column;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.naglowek-left a{
+    text-decoration: none;
+    color: black;
 }
 .naglowek-icon{
     display: flex;
     align-items: center;
 }
 .naglowek-icon img{
-    width: 55px;
-    margin-right: 5px;
+    width: 5.5vh;
+    margin-right: 0.5vh;
 }
 body{
-    margin: 0%;
+    margin: 0;
     background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(233, 233, 233), rgb(255, 0, 0), rgb(233, 233, 233));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    height: 100vh;
 }
 main {
     box-sizing: border-box;
@@ -93,16 +114,16 @@ main {
     padding: 3%;
 }
 .tekstglowny h1{
-    font-size: 45px;
+    font-size: 4.5vh;
     margin: 0;
 }
 .tekstglowny p{
     font-size: x-large;
 }
 .poczatek img {
-    height: 500px;
+    height: 50vh;
     margin: 0 10% 0 5%;
-    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0.4vh 0.8vh 1.2vh rgba(0, 0, 0, 0.5));
 }
 .wicemistrz{
     background-color: rgb(177, 0, 0);
@@ -115,15 +136,15 @@ main {
     border-style: solid;
     color: black;
     border-color: rgb(0, 0, 0);
-    padding: 15px 32px;
+    padding: 1.7vh 3.4vh;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.8vh;
     font-weight: bolder;
-    border-radius: 12px;
-    margin-top: 15px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 1.2vh;
+    margin-top: 1.5vh;
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 .button0:hover{
@@ -141,10 +162,10 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 5%;
-    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0.4vh 0.8vh 1.2vh rgba(0, 0, 0, 0.5));
 }
 .wicemistrz div{
-    margin: 50px;
+    margin: 5.938242280285036vh;
 }
 .text1 {
     justify-content: center;
@@ -153,7 +174,7 @@ main {
     width: fit-content;
     padding: 4%;
     color: rgb(0, 0, 0);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(233, 233, 233), rgb(255, 0, 0), rgb(233, 233, 233));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite; 
@@ -162,11 +183,11 @@ main {
     font-size: x-large;
 }
 .text1 h2{
-    font-size:40px; 
+    font-size:4.750593824228028vh; 
 }
 .img1{
     
-    border-radius: 12px;
+    border-radius: 1.4251781472684086vh;
 }
 .img1 ul{
     list-style: none;
@@ -181,22 +202,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 2.375296912114014vh auto;
     flex-wrap: wrap;
 }
 .img1 img{
-    height: 200px;
-    width: 300px;
+    height: 23.752969121140143vh;
+    width: 35.62945368171022vh;
     display: flex;
     justify-content: center;
     border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     align-items: center;
 }
 .cotof1 {
     position: relative;
-    background: url(Grafiki/strz2.png);
-    background-size: cover;
     padding: 8%;
 }
 
@@ -219,17 +238,17 @@ main {
     display: flex;
     flex-direction: column;
     background-color: rgb(177, 0, 0);
-    border-radius: 12px;
+    border-radius: 1.4251781472684086vh;
     width: fit-content;
     margin:auto;
     padding: 2%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
 }
 .text2 h2, .text2 p{
     text-align: center;
 }
 .text2 h2{
-    font-size: 40px;
+    font-size: 4.750593824228028vh;
 }
 .text2 p{
     font-size: x-large;
@@ -241,36 +260,36 @@ main {
     padding: 10%;
     background: url(Grafiki/bg01.png);
     background-size: cover;
-    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0.4vh 0.8vh 1.2vh rgba(0, 0, 0, 0.5));
 }
 .text3{
     background: linear-gradient(-45deg, rgb(255, 0, 0), #e9e9e9, rgb(255, 0, 0), rgb(233, 233, 233));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     width: fit-content;
     margin: auto;
     padding: 2%;
-    border-radius: 12px;
+    border-radius: 1.4251781472684086vh;;
 }
 .textoffers {
     background: linear-gradient(-45deg, rgb(255, 0, 0), #e9e9e9, rgb(255, 0, 0), rgb(233, 233, 233));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     width: fit-content;
     padding:  0 10%;
-    border-radius: 12px;
+    border-radius: 1.4251781472684086vh;;
 }
 .textoffers h2{
-    font-size: 45px;
+    font-size: 5.344418052256532vh;
 }
 .textoffers p{
     font-size: x-large;
     text-align: left;
 }
 .text3 h2{
-    font-size: 40px;
+    font-size: 4.750593824228028vh;
 }
 .text3 p{
     font-size: x-large;
@@ -285,7 +304,7 @@ main {
 }
 .social img{
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
-    margin: 15px;
+    margin: 1.7814726840855106vh;
     transition: transform 0.5s ease;
 }
 .social img:hover{
@@ -309,17 +328,17 @@ main {
     justify-content: center;
 }
 .giradiv img{
-    height: 125.8px;
-    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.5));
+    height: 14.94061757719715vh;
+    filter: drop-shadow(0.1vh 0.2vh 0.3vh rgba(0, 0, 0, 0.5));
 }
 .girasocial {
     display: flex;
     justify-content: center;
 }
 .girasocial i{
-    margin: 0 5px 26px 8px;
-    font-size: 45px;
-    filter: drop-shadow(1px 2px 3px rgba(49, 49, 49, 0.5));
+    margin: 0 0.6vh 3vh 0.95vh;
+    font-size: 5.344418052256532vh;
+    filter: drop-shadow(0.1vh 0.2vh 0.3vh rgba(0, 0, 0, 0.5));
     transition: transform 0.5s ease;
 }
 .girasocial i:hover {
@@ -330,16 +349,16 @@ main {
     width: fit-content;
 }
 .giradiv div{
-    margin: 2px;
+    margin: 0.2vh;
 }
 .numery i{
-    filter: drop-shadow(1px 2px 3px rgba(49, 49, 49, 0.5));
+    filter: drop-shadow(0.1vh 0.2vh 0.3vh rgba(0, 0, 0, 0.5));
 }
 .numery p{
-    font-size: 20px;
+    font-size: 2.375296912114014vh;
 }
 .giradiv{
-    margin: 20px;
+    margin: 2.375296912114014vh;
 }
 .whydr{
     display: flex;
@@ -348,7 +367,7 @@ main {
     background: url(Grafiki/bg0.png);
     background-size: cover;
     padding: 10%;
-    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0.4vh 0.8vh 1.2vh rgba(0, 0, 0, 0.5));
 }
 .whydrtext{
     text-align: center;
@@ -357,11 +376,11 @@ main {
 	animation: gradient 15s ease infinite;
     width: fit-content;
     padding: 5%;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 1.4vh;
+    box-shadow: 0 0.8vh 1.6vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
 }
 .whydrtext h1{
-    font-size: 35px;
+    font-size: 4.1vh;
 }
 .whydrtext p{
     font-size: large;
@@ -369,10 +388,10 @@ main {
 .whydrimg img{
     display: flex;
     align-items: center;
-    width: 400px;
+    width: 47.5vh;
     height: auto;
     margin: 0 20%;
-    filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0.3vh 0.6vh 0.9vh rgba(0, 0, 0, 0.5));
 }
 .image1{
     display: flex;
@@ -384,7 +403,7 @@ main {
 }
 .imgmain img{
     margin: 0;
-    height: 300px;
+    height: 35.62945368171022vh;
     transition: transform 0.5s ease;
     transform: scale(1.01);
 }
@@ -402,7 +421,7 @@ main {
 .imgcontainer{
     overflow: hidden;
     position: relative;
-    height: 300px;
+    height: 35.6vh;
 }
 .imgmain{
     display: flex;
@@ -411,8 +430,8 @@ main {
     position: relative;
     width: fit-content;
     margin: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 1.4vh;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
 }
 .imgcontainer p{
     bottom: 0;
@@ -420,7 +439,7 @@ main {
     right: 0;
     position: absolute;
     color: rgb(233, 233, 233);
-    font-size: 22px;
+    font-size: 2.6vh;
     text-align: center;
     z-index: 1;
     pointer-events: none;
@@ -430,8 +449,8 @@ main {
 }
 .meetus{
     text-align: center;
-    font-size: 30px;
-    margin: 30px 0;
+    font-size: 3.56vh;
+    margin: 3.56vh 0;
     background-size: cover;
     background-position: 0;
 
@@ -440,10 +459,10 @@ main {
     text-align: center;
 }
 .textstart h1{
-    font-size: 40px;
+    font-size: 4.75vh;
 }
 .textstart p{
-    font-size: 23px;
+    font-size: 2.73vh;
 }
 
 .buttononas {
@@ -458,32 +477,32 @@ main {
     background: url(Grafiki/bg01.png);
     background-size: cover;
     padding: 8%;
-    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0.4vh 0.8vh 1.2vh rgba(0, 0, 0, 0.5));
 }
 .osiagniecia h1{
     font-size: 7vh;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5.94vh;
     margin-top: 0;
 }
 .osiagnieciabg {
     background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(233, 233, 233), rgb(255, 0, 0), rgb(233, 233, 233));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    border-radius: 12px;
+    border-radius: 1.4vh;
     margin: 0 3%;
     padding:  0 2%;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     width: 400px;
 }
 .osiagnieciabg2 {
     background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(233, 233, 233), rgb(255, 0, 0), rgb(233, 233, 233));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    border-radius: 12px;
+    border-radius: 1.4vh;
     margin: 0 3%;
     padding:  0 2%;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.2), 0 0.6vh 2vh 0 rgba(0,0,0,0.19);
     width: 550px;
 }
 .achtext h2{
