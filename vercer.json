@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/strona-główna",
+      "destination": "/index.html"
+      "permanent": true
+    },
+    {
+      "source": "/o-nas",
+      "destination": "/o_nas.html"
+      "permanent": true
+    },
+    {
+      "source": "/sponsorzy",
+      "destination": "/sponsorzy.html"
+      "permanent": true
+    }
+  ]
+}
